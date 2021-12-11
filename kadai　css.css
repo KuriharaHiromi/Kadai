@@ -1,0 +1,79 @@
+
+body {
+    margin: 0px;
+}
+
+.Top {
+height:280px;
+background-color:rgb(207, 39, 109);
+padding-left: 60px;
+
+margin: auto;
+
+}
+
+h1 {
+font-size: 120px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: italic;
+color: whitesmoke;
+padding-top: 70px;
+}
+
+.header1 {
+height: 1000px;
+}
+
+
+.menu {
+  font-size: 70px;
+  padding: 30px;
+  color: snow;
+  font-family: fantasy;
+  margin: auto;
+  background-color: orange;
+
+}
+
+
+
+.accordion {
+height: 855px;
+font-size: 50px;
+font-family: fantasy;
+color: snow;
+ list-style: none;
+    background-color: rgb(65, 173, 32)
+}
+
+
+.btn {
+float: left;
+padding: 30px 400px 0px 30px;
+cursor: pointer;
+}
+
+
+
+
+.btn:hover {
+ opacity: 0.6;
+}
+
+
+
+.stay {
+  opacity: 0;
+
+}
+
+.backimage {
+  height: 1200px;
+  background-image :url(https://bluegreen.jp/wp-content/uploads/2019/07/IMG_5241.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  margin: auto;
+}
+
+
+
