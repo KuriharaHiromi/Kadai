@@ -1,6 +1,7 @@
 
 body {
     margin: 0px;
+    max-width: 2000px;
 }
 
 .Top {
@@ -29,7 +30,7 @@ height: 1000px;
   font-size: 70px;
   padding: 30px;
   color: snow;
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: auto;
   background-color: orange;
 
@@ -38,42 +39,166 @@ height: 1000px;
 
 
 .accordion {
-height: 855px;
+height: 1200px;
 font-size: 50px;
-font-family: fantasy;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color: snow;
  list-style: none;
-    background-color: rgb(65, 173, 32)
-}
-
-
-.btn {
-float: left;
-padding: 30px 400px 0px 30px;
-cursor: pointer;
+ background-color: rgb(65, 173, 32)
 }
 
 
 
 
-.btn:hover {
- opacity: 0.6;
+.btn--orange {
+  height: 60px;
+  width: 120px;
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.btn--orange1 {
+  height: 60px;
+  width: 200px;
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+.btn--orange:active {
+  box-shadow: none;
+
+}
+
+.btn--orange:hover {
+  color: #fff;
+  background: #e96303ef;
+  border-bottom: 2px solid #b84c00;
+}
+.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 
 
 .stay {
-  opacity: 0;
+  padding-left: 30px; 
+}
+
+.up {
+  padding-left: 30px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+section {
+  display: flex;
+  padding: 2%;
+  box-sizing: border-box;
+}
+ 
+.up{
+  width: 2000px;
+  height: 200px;
+  box-sizing: border-box;
 
 }
+
+
+.up{
+    opacity: 0;
+    transition: all 1s ease;
+  }
+   
+ .up.show {
+    opacity: 1;
+    transform: none;
+  }
+   
+.op{
+    transform: translate(0, 100px);
+  }
+
+
 
 .backimage {
-  height: 1200px;
+  height: 700px;
   background-image :url(https://bluegreen.jp/wp-content/uploads/2019/07/IMG_5241.jpg);
   background-size: cover;
-  opacity: 0.5;
-  margin: auto;
+  opacity: 1;
+  margin-top: 345px;
+  padding-top: 350px;
+  font-family: 'Hind', sans-serif;
+  font-size: 70px;
+  color: snow;
+  text-align: center;
+
+
 }
 
+span {
+  color: transparent;
+  animation: blur 10s ease-out infinite;
+  -webkit-animation: blur 10s ease-out infinite;
+}
 
+span:nth-child(1) {
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+span:nth-child(2) {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+span:nth-child(3) {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+span:nth-child(4) {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+span:nth-child(5) {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+span:nth-child(6) {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+span:nth-child(7) {
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+}
+
+@keyframes blur {
+  0%    {text-shadow:  0 0 100px #fff; opacity:0;}
+  5%    {text-shadow:  0 0 90px #fff;}
+  15%   {opacity: 1;}
+  20%   {text-shadow:  0 0 0px #fff;}
+  80%   {text-shadow:  0 0 0px #fff;}
+  85%   {opacity: 1;}
+  95%   {text-shadow:  0 0 90px #fff;}
+  100%  {text-shadow:  0 0 100px #fff; opacity:0;}
+}
+
+@-webkit-keyframes blur {
+  0%    {text-shadow:  0 0 100px #fff; opacity:0;}
+  5%    {text-shadow:  0 0 90px #fff;}
+  15%   {opacity: 1;}
+  20%   {text-shadow:  0 0 0px #fff;}
+  80%   {text-shadow:  0 0 0px #fff;}
+  85%   {opacity: 1;}
+  95%   {text-shadow:  0 0 90px #fff;}
+  100%  {text-shadow:  0 0 100px #fff; opacity:0;}
+}
 
